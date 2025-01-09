@@ -1,0 +1,7 @@
+venv/
+utils/
+__pycache__/
+pruebas.py
+credentials.json
+credentials/*.json
+.env
