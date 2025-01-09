@@ -8,7 +8,6 @@ import sys
 import time
 from datetime import datetime, timedelta, timezone
 from googleapiclient.discovery import build
-from dotenv import load_dotenv
 
 from services.GoogleCalendar import GoogleCalendarManager, AirtableAppointmentManager
 from services.AirTable import AirtablePATManager
@@ -18,7 +17,6 @@ from services.WhatsApp import WhatsApp_Manager
 
 app = Flask(__name__)
 
-load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 VERIFY_TOKEN = os.getenv("VERIFY_TOKEN")
